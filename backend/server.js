@@ -17,7 +17,7 @@ app.use('/api/jobs', jobRoutes);
 app.use('/api/practice',practiceRoutes);
 
 // Connect to jobboard database
-mongoose.connect('mongodb://localhost:27017/jobboard', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://user1:pN6hbP65HOIiarKB@cluster0.qek0l.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Connected to jobboard MongoDB'))
   .catch((err) => console.error('Error connecting to jobboard database:', err));
 
